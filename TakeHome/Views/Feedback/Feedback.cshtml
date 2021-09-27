@@ -4,10 +4,11 @@
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+<p class="validation-text"><em>@ViewBag.Result</em></p>
 
 <div class="form">
     @*@using (Html.BeginForm("Submit", "Feedback"))*@
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Index", "Feedback", FormMethod.Post))
     {
         /* form here */
     <fieldset>

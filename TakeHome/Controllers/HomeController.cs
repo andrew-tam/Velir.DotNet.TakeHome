@@ -11,6 +11,7 @@ namespace TakeHome.Controllers
 		public ActionResult Index()
 		{
 			return View();
+
 		}
 
 		public ActionResult About()
@@ -26,5 +27,10 @@ namespace TakeHome.Controllers
 
 			return View();
 		}
+
+        public ActionResult FakeError()
+        {
+            throw new HttpException();
+        }
 	}
 }
